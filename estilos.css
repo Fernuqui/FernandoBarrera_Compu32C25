@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/modulo-pattern-body.png");
+    background-repeat: repeat;
+    background-size: 200px;
+    background-position: top left;
+    background-blend-mode: multiply;
+    margin: 0;
+    padding: 0;
+    background-color: #ff8a001a;
+    font-family: "Zain", sans-serif;
+}
+
+header {
+    background-image: url("img/modulo-pattern_header.png");
+    background-repeat: repeat;
+    background-size: 200px;
+    background-position: top left;
+    background-color: #0000004d;
+    background-blend-mode: multiply;
+    background-position-y: 390px;
+    color: beige;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.inicio {
+    text-align: center;
+    display: inline-block;
+    padding: 5px 0;
+    margin: 0 auto;
+    max-width: 950px;
+    width: 100%;
+    background-color: #f5f2ef;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+
+}
+
+.inicio h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ff8a00;
+}
+
+.inicio p {
+    font-size: 25px;
+    font-style: italic;
+    color: #ff8a00;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: beige;
+    background-color: #ff8a00;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #ff8a00;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: beige;
+    color: #ff8a00;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+section {
+    max-width: 950px;
+    width: 100%;
+    background-color: #f5f2ef;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #ff8a00;
+    margin-bottom: 15px;
+    padding-left: 40px;
+}
+
+.contenedor-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor-1 article {
+    background-color: #ff8a000a;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.contenedor-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor-2 article {
+    background-color: #ff8a000a;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.sobremi-contenedor {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 35px;
+    padding-top: 0px;
+}
+
+.sobremi-foto img {
+    border-radius: 7%;
+    object-fit: cover;
+}
+
+.sobremi-texto {
+    padding-top: 25px;
+}
+
+.sobremi-texto p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+}
+
+#estudios article {
+    margin-bottom: 35px;
+    line-height: 30px;
+    align-items: baseline;
+}
+
+#estudios h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #ff8a00;
+}
+
+#estudios h4 {
+    font-size: 20px;
+}
+
+#estudios p {
+    font-size: 20px;
+}
+
+#cursos article {
+    margin-bottom: 35px;
+    line-height: 25px;
+    align-items: baseline;
+}
+
+#cursos h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #ff8a00;
+}
+
+#cursos h4 {
+    font-size: 20px;
+}
+
+#cursos p {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #ff8a00;
+    color: beige;
+    text-align: center;
+    padding: 1px;
+    font-size: 19px;
+}
+
+.orden-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.proyecto {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.proyecto h3 {
+    color: #ff8a00;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.proyecto a {
+    color: #ff8a00;
+    font-size: 20px;
+}
+
+#contacto article {
+    margin-bottom: 20px;
+    margin-left: 42px;
+    line-height: 15px;
+    margin-top: -8px;
+    font-size: 20px;
+}
+
+#contacto p {
+    font-size: 20px;
+}
+
+#contacto a {
+    color: #ff8a00;
+}
