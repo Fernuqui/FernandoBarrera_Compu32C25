@@ -18,11 +18,11 @@ header {
     background-image: url("img/modulo-pattern_header.png");
     background-repeat: repeat;
     background-size: 200px;
-    background-position: top left;
+    background-position: top left; /* siendo un pattern, es necesario que tenga una posición?? */
     background-color: #0000004d;
     background-blend-mode: multiply;
     background-position-y: 390px;
-    color: beige;
+    color: beige; /* no produce cambios */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -32,9 +32,9 @@ header {
 
 .inicio {
     text-align: center;
-    display: inline-block;
+    display: inline-block; /* este año no vimos esta propiedad, qué hace?? */
     padding: 5px 0;
-    margin: 0 auto;
+    margin: 0 auto; /* esto es igual que repetir lo del selector universal */
     max-width: 950px;
     width: 100%;
     background-color: #f5f2ef;
@@ -46,9 +46,9 @@ header {
 
 .inicio h1 {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 700; /* no produce cambios */
     margin-bottom: 5px;
-    color: #ff8a00;
+    color: #ff8a00; /* para no repetir el color en h1 y p le podés aplicar la propiedad directamente a la etiqueta padre */
 }
 
 .inicio p {
@@ -59,7 +59,7 @@ header {
 
 nav {
     display: flex;
-    gap: 50px;
+    gap: 50px; /* esto ya es personal, pero este espacio es muy grande, especialmente cuando se hace el wrap. Podés googlear para ponerle dos valores entonces uno es para las columnas y el otro para las calles */
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -107,7 +107,7 @@ section h2 {
     padding-left: 40px;
 }
 
-.contenedor-1 {
+.contenedor-1 { /* este nombre es bastante ambiguo, dale un nombre más semántico. Además tiene mucho espacio entre sí esta caja, o sea, entre el título y las cajas, y entre las cajas también. Lo mismo pasa en la parte de cursos */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -131,7 +131,7 @@ section h2 {
     padding: 60px;
 }
 
-.sobremi-contenedor {
+.sobremi-contenedor { /* la etiqueta donde está esta class podría ser semánticamente el artículo y adentro tener un div para los párrafos. También no es necesario que la foto esté dentro de un div */
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -145,7 +145,7 @@ section h2 {
 }
 
 .sobremi-texto {
-    padding-top: 25px;
+    padding-top: 25px; /* esto es a nivel diseño, queda extraño que el texto no esté alineado a la foto en algún sentido, ya sea superior, centrado o inferior. Elegite una, También le pondría un max-width porque la línea de texto está larguísima. También agregarle un text-wrap: pretty; para que no se creen huérfanas cuando se visualiza en pantallas más pequeñas  */
 }
 
 .sobremi-texto p {
