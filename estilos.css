@@ -18,11 +18,8 @@ header {
     background-image: url("img/modulo-pattern_header.png");
     background-repeat: repeat;
     background-size: 200px;
-    background-position: top left;
     background-color: #0000004d;
     background-blend-mode: multiply;
-    background-position-y: 390px;
-    color: beige;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -32,34 +29,30 @@ header {
 
 .inicio {
     text-align: center;
-    display: inline-block;
     padding: 5px 0;
-    margin: 0 auto;
     max-width: 950px;
     width: 100%;
     background-color: #f5f2ef;
     border-radius: 15px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     color: #333;
+    color: #ff8a00;
 
 }
 
 .inicio h1 {
     font-size: 60px;
-    font-weight: 700;
     margin-bottom: 5px;
-    color: #ff8a00;
 }
 
 .inicio p {
     font-size: 25px;
     font-style: italic;
-    color: #ff8a00;
-}
+    }
 
 nav {
     display: flex;
-    gap: 50px;
+    gap: 20px 40px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -107,45 +100,54 @@ section h2 {
     padding-left: 40px;
 }
 
-.contenedor-1 {
+.estudios-contenedor {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.contenedor-1 article {
+.estudios-contenedor article {
     background-color: #ff8a000a;
     border-radius: 20px;
-    padding: 60px;
-}
-
-.contenedor-2 {
+    padding: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-.contenedor-2 article {
+.cursos-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cursos-contenedor article {
     background-color: #ff8a000a;
     border-radius: 20px;
-    padding: 60px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sobremi-contenedor {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     padding: 35px;
     padding-top: 0px;
 }
 
-.sobremi-foto img {
+.sobremi-contenedor img {
     border-radius: 7%;
     object-fit: cover;
 }
 
 .sobremi-texto {
-    padding-top: 25px;
+    max-width: 550px;
+    text-wrap: pretty;
 }
 
 .sobremi-texto p {
@@ -164,19 +166,21 @@ section h2 {
     font-size: 25px;
     margin-bottom: 5px;
     color: #ff8a00;
+    line-height: 0px;
 }
 
 #estudios h4 {
     font-size: 20px;
+    line-height: 0px;
 }
 
 #estudios p {
     font-size: 20px;
+    line-height: 0px;
 }
 
 #cursos article {
     margin-bottom: 35px;
-    line-height: 25px;
     align-items: baseline;
 }
 
@@ -184,14 +188,17 @@ section h2 {
     font-size: 25px;
     margin-bottom: 5px;
     color: #ff8a00;
+    line-height: 0px;
 }
 
 #cursos h4 {
     font-size: 20px;
+    line-height: 0px;
 }
 
 #cursos p {
     font-size: 20px;
+    line-height: 0px;
 }
 
 footer {
